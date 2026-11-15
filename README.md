@@ -20,6 +20,7 @@
 
 - [What it does](#what-it-does)
 - [Requirements](#requirements)
+- [Download (Prebuilt)](#download-prebuilt)
 - [Build](#build)
 - [Usage](#usage)
 - [Command line](#command-line)
@@ -61,6 +62,14 @@ opens as vanilla Growtopia.
 The tool reads the PE machine type of both the client and the DLL and refuses to continue on a
 mismatch.
 
+## Download (Prebuilt)
+
+If you don't want to deal with installing a compiler or building from source, the precompiled executable is already uploaded directly to the repository:
+
+- **[Download `GABBerk_x_GENTAHAX.exe`](https://github.com/BrK08/GABBerk-x-GentaHAX/blob/main/src/GABBerk_x_GENTAHAX.exe)** *(Click **View raw** or the download icon on GitHub)*
+
+> **Note:** Using the prebuilt binary is completely optional — it is provided purely for convenience so you don't have to go through the build steps below. If you prefer to verify and compile the source code yourself, follow the **Build** instructions.
+
 ## Build
 
 ### Option A — MSYS2 / MinGW-w64
@@ -101,7 +110,7 @@ One `gabb_stabilizer.exe`. No DLLs, no VC++ redistributable, nothing to register
 ## Usage
 
 1. Store `GENTAHAX - GTInternal.dll` in a permanent location, for example `C:\Genta\`.
-2. Right-click `gabb_stabilizer.exe` → **Run as administrator**.
+2. Right-click `gabb_stabilizer.exe` (or `GABBerk_x_GENTAHAX.exe`) → **Run as administrator**.
 3. Paste the full DLL path when prompted.
    - `Enter` → search Desktop and Downloads for a `GH*` folder
    - `0` → no injection, vanilla multi-instance launcher only
@@ -173,6 +182,7 @@ MIT — see [LICENSE](LICENSE).
 
 - [Ne yapar](#ne-yapar)
 - [Gereksinimler](#gereksinimler)
+- [İndirme (Hazır EXE)](#i̇ndirme-hazır-exe)
 - [Derleme](#derleme)
 - [Kullanım](#kullanım)
 - [Komut satırı](#komut-satırı)
@@ -212,6 +222,14 @@ Growtopia olarak açılır.
 | GENTAHAX | `GENTAHAX - GTInternal.dll`, **x64 sürüm** |
 
 Araç hem istemcinin hem DLL'in PE makine tipini okur, uyuşmazlıkta devam etmez.
+
+## İndirme (Hazır EXE)
+
+Derleyici kurmak veya kaynak kodu derlemekle uğraşmak istemeyenler için hazır derlenmiş `.exe` dosyasını doğrudan repoya ekledim:
+
+- **[`GABBerk_x_GENTAHAX.exe` İndir](https://github.com/BrK08/GABBerk-x-GentaHAX/blob/main/src/GABBerk_x_GENTAHAX.exe)** *(Açılan sayfada **View raw** veya sağ üstteki indirme ikonuna tıklayın)*
+
+> **Not:** Hazır `.exe` dosyasını kullanmak kesinlikle zorunlu değildir — yalnızca aşağıdaki derleme adımlarıyla uğraşmamanız ve kolayca çalıştırabilmeniz için eklenmiştir. Kodu kendiniz kontrol edip derlemek isterseniz **Derleme** adımlarını takip edebilirsiniz.
 
 ## Derleme
 
@@ -253,7 +271,7 @@ Tek bir `gabb_stabilizer.exe`. DLL yok, VC++ redistributable yok, kayıt gerekti
 ## Kullanım
 
 1. `GENTAHAX - GTInternal.dll` dosyasını kalıcı bir yere koy, örneğin `C:\Genta\`.
-2. `gabb_stabilizer.exe` → sağ tık → **Yönetici olarak çalıştır**.
+2. `gabb_stabilizer.exe` (veya `GABBerk_x_GENTAHAX.exe`) → sağ tık → **Yönetici olarak çalıştır**.
 3. Sorulduğunda DLL'in tam yolunu yapıştır.
    - `Enter` → Masaüstü ve İndirilenler içinde `GH*` klasörü arar
    - `0` → enjeksiyon yok, sadece normal çoklu instance
